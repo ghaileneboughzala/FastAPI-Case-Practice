@@ -27,14 +27,13 @@ Avant de commencer, assurez-vous que votre système remplit les conditions suiva
 
 ## Installation et Configuration
 
-Pour démarrer avec ce projet, suivez ces étapes détaillées :
 
 ### Étape 1 : Cloner le dépôt Git
 #### Clonez le dépôt du projet à l’aide de la commande suivante dans votre terminal :
 
-git clone https://github.com/username/repository.git
+git clone https://github.com/ghaileneboughzala/FastAPI-Case-Practice.git
 
-cd repository
+cd FastAPI-Case-Practice
 
 ### Étape 2 : Créer un environnement virtuel
 #### Créez un environnement virtuel Python pour isoler les dépendances :
