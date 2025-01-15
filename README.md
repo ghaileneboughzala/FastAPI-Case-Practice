@@ -18,6 +18,63 @@ Ce projet s’inscrit dans cette dynamique en proposant une solution novatrice b
 
 ---
 
+## Prérequis
+
+Avant de commencer, assurez-vous que votre système remplit les conditions suivantes :
+
+- **Python 3.8** ou supérieur
+- **Un compte Scaleway AI** avec une clé API active
+
+## Installation et Configuration
+
+Pour démarrer avec ce projet, suivez ces étapes détaillées :
+
+### Étape 1 : Cloner le dépôt Git
+#### Clonez le dépôt du projet à l’aide de la commande suivante dans votre terminal :
+
+git clone https://github.com/username/repository.git
+
+cd repository
+
+### Étape 2 : Créer un environnement virtuel
+#### Créez un environnement virtuel Python pour isoler les dépendances :
+python -m venv venv
+
+#### Activez l’environnement virtuel :
+
+##### Sur Linux/macOS :
+source venv/bin/activate
+
+##### Sur Windows :
+venv\Scripts\activate
+
+### Étape 3 : Installer les dépendances
+#### Installez toutes les bibliothèques nécessaires au projet à l’aide de la commande suivante :
+
+pip install fastapi uvicorn pydantic requests python-dotenv streamlit pytest
+
+## Exécution du Projet
+### Lancer le serveur FastAPI
+#### 1. Pour démarrer le backend et accéder à l’API, exécutez la commande suivante :
+uvicorn main:app --reload
+#### 2. Le serveur sera lancé sur l’adresse suivante :
+http://127.0.0.1:8000/docs
+
+### Lancer l'interface utilisateur avec Streamlit
+### Une interface simple et interactive a été créée avec Streamlit. 
+#### 1. Exécutez la commande suivante pour lancer Streamlit :
+streamlit run app.py
+#### 2. Une fois le serveur Streamlit démarré, accédez à l’interface utilisateur dans votre navigateur à l’adresse :
+http://localhost:8501
+
+## Structure du Projet
+
+- **fastAPImain.py** : Contient l'implémentation avec **FastAPI**.
+- **main.py** : Contient l'implémentation avec **Streamlit**.
+- **.env** : Fichier de configuration pour stocker la clé API Scaleway de manière sécurisée.
+
+
+---
 ## Stack Technique
 
 ### 1. FastAPI
